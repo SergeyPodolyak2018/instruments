@@ -3,7 +3,7 @@ var regular={
                     var2:{re:/<g id="receiver_x0020_receiver-F([0-9]{1,})-R([0-9]{1,})">/g,         change:'<g class="receiver receiver-F$1-R$2">'},
                     var3:{re:/<g id="pumpGroup_x0020_pumpGroup-F([0-9]{1,})-P([0-9]{1,})">/g,       change:'<g class="pumpGroup pumpGroup-F$1-P$2">'},
                     var4:{re:/<g id="refrigerator_x0020_refrigerator-F([0-9]{1,})-Rf([0-9]{1,})">/g,change:'<g class="refrigerator refrigerator-F$1-Rf$2">'},
-                    var5:{re:/<g class="jar jar-F([0-9]{1,})-J([0-9]{1,})">/g,                      change:'<g class="jar jar-F$1-J$2">'},
+                    var5:{re:/<g id="jar_x0020_jar-F([0-9]{1,})-J([0-9]{1,})">/g,                   change:'<g class="jar jar-F$1-J$2">'},
                     var6:{re:/id="([A-Z]{1})([0-9]{1,})-([A-Z]{1})([0-9]{1,})-select" class="/g,    change:'class="$1$2-$3$4-select '},
                     var7:{re:/id="status[_]{0,}([0-9]{0,})" class="/g,                              change:'class="status '},                    
                     var8:{re:/id="pressure([0-9]{1,})[_]{0,}([0-9]{0,})" class="/g,                 change:'class="pressure$1 '},                    
@@ -11,7 +11,7 @@ var regular={
                     var10:{re:/id="pressureSensor([0-9]{1,})[_]{0,}([0-9]{0,})" class="/g,          change:'class="pressureSensor$1 '},
                     var11:{re:/id="dPressure([0-9]{1,})[_]{0,}([0-9]{0,})" class="/g,               change:'class="dPressure$1 '},
                     var12:{re:/id="level([0-9]{1,})[_]{0,}([0-9]{0,})" class="/g,                   change:'class="level$1 '},
-                    var13:{re:/id="LevelSensor([0-9]{1,})[_]{0,}([0-9]{0,})" class="/g,             change:'class="LevelSensor$1 '},
+                    var13:{re:/id="levelSensor([0-9]{1,})[_]{0,}([0-9]{0,})" class="/ig,            change:'class="LevelSensor$1 '},
                     var14:{re:/<g id="attention[_]{0,}([0-9]{0,})">/g,                              change:'<g class="attention">'},
                     var15:{re:/<g id="gate[_]{0,}([0-9]{0,})">/g,                                   change:'<g class="gate">'},
                     var16:{re:/<g id="motoGate[_]{0,}([0-9]{0,})">/g,                               change:'<g class="motoGate">'},
@@ -23,6 +23,8 @@ var regular={
                     var22:{re:/id="auto[_]{0,}([0-9]{0,})" class="/g,                               change:'class="auto '},
                     var23:{re:/id="manual[_]{0,}([0-9]{0,})" class="/g,                             change:'class="manual '},
                     var24:{re:/<g id="Слой_x0020_1">/g,                                             change:'<g id="Слой_x0020_1"><title class="title_very_dificult">:-)</title>'},
+                    var25:{re:/<g id="CManager_x0020_CManager-F0-M1">/g,                            change:'<g class="CManager CManager-F0-M1">'},
+                    var26:{re:/id="text" class="/g,                                                 change:'class="text '},
                     
    
                 };
