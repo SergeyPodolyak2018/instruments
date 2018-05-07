@@ -21,6 +21,9 @@ var regular={
                     var20:{re:/<g id="hiter[_]{0,}([0-9]{0,})">/g,                                  change:'<g class="hiter$1">'},
                     var21:{re:/<g id="pump([0-9]{1,})[_]{0,}([0-9]{0,})">/g,                        change:'<g class="pump$1">'},
                     var22:{re:/id="auto[_]{0,}([0-9]{0,})" class="/g,                               change:'class="auto '},
-                    var23:{re:/id="manual[_]{0,}([0-9]{0,})" class="/g,                             change:'class="manual '}
+                    var23:{re:/id="manual[_]{0,}([0-9]{0,})" class="/g,                             change:'class="manual '},
+                    var24:{re:/<g id="Слой_x0020_1">/g,                                             change:'<g id="Слой_x0020_1"><title class="title_very_dificult">:-)</title>'},
+                    
+   
                 };
 exports.regular=regular;

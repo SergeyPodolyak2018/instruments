@@ -89,13 +89,13 @@ var regular={       var1:{re:/<g id="konv_x0020_konv([0-9]{1,})">/g, change:'<g 
                     var72:{re:/id="dryer([0-9]{1,})_x0020_mark_lower.*" class="/g, change:'class="dryer$1mark_lower '},
                     var73:{re:/id="dryer([0-9]{1,})_x0020_mark_middle[_]{0,}[0-9]{0,}" class="/g, change:'class="dryer$1mark_middle '},
                     var74:{re:/id="dryer([0-9]{1,})_x0020_mark_middle.*" class="/g, change:'class="dryer$1mark_middle '},
-                    var75:{re:/id="dryer([0-9]{1,})_x0020_mark_upper[_]{0,}[0-9]{0,}" class="/g, change:'class="dryer$mark_upper '},
+                    var75:{re:/id="dryer([0-9]{1,})_x0020_mark_upper[_]{0,}[0-9]{0,}" class="/g, change:'class="dryer$1mark_upper '},
                     var76:{re:/id="dryer([0-9]{1,})_x0020_mark_upper.*" class="/g, change:'class="dryer$1mark_upper '},
                     var77:{re:/id="dryer([0-9]{1,})mark_lower[_]{0,}[0-9]{0,}" class="/g, change:'class="dryer$1mark_lower '},
                     var78:{re:/id="dryer([0-9]{1,})mark_lower.*" class="/g, change:'class="dryer$1mark_lower '},
                     var79:{re:/id="dryer([0-9]{1,})mark_middle[_]{0,}[0-9]{0,}" class="/g, change:'class="dryer$1mark_middle '},
                     var80:{re:/id="dryer([0-9]{1,})mark_middle.*" class="/g, change:'class="dryer$1mark_middle '},
-                    var81:{re:/id="dryer([0-9]{1,})mark_upper[_]{0,}[0-9]{0,}" class="/g, change:'class="dryer$mark_upper '},
+                    var81:{re:/id="dryer([0-9]{1,})mark_upper[_]{0,}[0-9]{0,}" class="/g, change:'class="dryer$1mark_upper '},
                     var82:{re:/id="dryer([0-9]{1,})mark_upper.*" class="/g, change:'class="dryer$1mark_upper '},
                     var83:{re:/id="dryer([0-9]{1,})select[_]{0,}[0-9]{0,}" class="/g, change:'class="dryer$1select '},
                     var84:{re:/id="dryer([0-9]{1,})select.*" class="/g, change:'class="dryer$1select '},
@@ -103,21 +103,34 @@ var regular={       var1:{re:/<g id="konv_x0020_konv([0-9]{1,})">/g, change:'<g 
                     var85:{re:/id="line_x0020_line([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="line line$1 '},
                     var86:{re:/id="line_x0020_line([0-9]{1,})_x0020_line([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="line line$1 line$2 '},
                     var87:{re:/id="line_x0020_line([0-9]{1,})_x0020_line([0-9]{1,})_x0020_line([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="line line$1 line$2 line$3 '},
-                    var87:{re:/id="line_x0020_line([0-9]{1,})_x0020_line([0-9]{1,})_x0020_line([0-9]{1,})_x0020_line([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="line line$1 line$2 line$3 line$4 '},
+                    var88:{re:/id="line_x0020_line([0-9]{1,})_x0020_line([0-9]{1,})_x0020_line([0-9]{1,})_x0020_line([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="line line$1 line$2 line$3 line$4 '},
 
-                    var88:{re:/<g id="separator_x0020_separator([0-9]{1,})">/g, change:'<g class="separator separator$1">'},
-                    var98:{re:/id="separator([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="separator$1 '},
-                    var90:{re:/id="separator([0-9]{1,})manual[_]{0,}[0-9]{0,}" class="/g, change:'class="separator$1manual '},
-                    var91:{re:/id="separator([0-9]{1,})select[_]{0,}[0-9]{0,}" class="/g, change:'class="separator$1select '},
-                    var92:{re:/id="separator([0-9]{1,})select.*" class="/g, change:'class="separator$1select '},
+                    var89:{re:/<g id="separator_x0020_separator([0-9]{1,})">/g, change:'<g class="separator separator$1">'},
+                    var90:{re:/id="separator([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="separator$1 '},
+                    var91:{re:/id="separator([0-9]{1,})manual[_]{0,}[0-9]{0,}" class="/g, change:'class="separator$1manual '},
+                    var92:{re:/id="separator([0-9]{1,})select[_]{0,}[0-9]{0,}" class="/g, change:'class="separator$1select '},
+                    var93:{re:/id="separator([0-9]{1,})select.*" class="/g, change:'class="separator$1select '},
+                    //преобразование поворотной трубы
+                    var94:{re:/<g id="tube_x0020_tube([0-9]{1,})">/g, change:'<g class="tube tube$1">'},
+                    var95:{re:/id="tube([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="tube$1 '},
+                    var96:{re:/id="tube([0-9]{1,})manual[_]{0,}[0-9]{0,}" class="/g, change:'class="tube$1manual '},
+                    var97:{re:/id="tube([0-9]{1,})select[_]{0,}[0-9]{0,}" class="/g, change:'class="tube$1select '},
+                    var98:{re:/id="tube([0-9]{1,})select.*" class="/g, change:'class="tube$1select '},
+                    var99:{re:/id="tube([0-9]{1,})pos([0-9]{1,})" class="/g, change:'class="tube$1pos$2 '},
+                    //Преобразование меток аналоговых датчиков
+                    var100:{re:/<g id="analog_x0020_analogLable([0-9]{1,})">/g, change:'<g class="analog_dat analog_datLable$1">'},
+                    var101:{re:/id="analog([0-9]{1,})fon[_]{0,}[0-9]{0,}" class="/g, change:'class="analog_dat$1fon '},
+                    var102:{re:/id="analog([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="analog_dat$1 '},
 
-                    var93:{re:/<g id="tube_x0020_tube([0-9]{1,})">/g, change:'<g class="tube tube$1">'},
-                    var94:{re:/id="tube([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="tube$1 '},
-                    var95:{re:/id="tube([0-9]{1,})manual[_]{0,}[0-9]{0,}" class="/g, change:'class="tube$1manual '},
-                    var96:{re:/id="tube([0-9]{1,})select[_]{0,}[0-9]{0,}" class="/g, change:'class="tube$1select '},
-                    var97:{re:/id="tube([0-9]{1,})select.*" class="/g, change:'class="tube$1select '},
-                    var98:{re:/id="tube([0-9]{1,})pos([0-9]{1,})" class="/g, change:'class="tube$1pos$2 '},
+                    //Groupe gate type 23
+                    var103:{re:/<g id="zadvijkaGroup_x0020_zadvijkaGroup([0-9]{1,})">/g, change:'<g class="zadvijkaGroup zadvijkaGroup$1">'},
+                    var104:{re:/id="zadvijkaGroup([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="zadvijkaGroup$1 '},
+                    var105:{re:/id="zadvijkaGroup([0-9]{1,})select[_]{0,}[0-9]{0,}" class="/g, change:'class="zadvijkaGroup$1select '},
+                    var106:{re:/id="zadvijkaGroup([0-9]{1,})select.*" class="/g, change:'class="zadvijkaGroup$1select '},
 
+                    var107:{re:/<g id="Слой_x0020_1">/g, change:'<g id="Слой_x0020_1"><title class="title_very_dificult">:-)</title>'},
 
                 };
+                
+  
 exports.regular=regular;
