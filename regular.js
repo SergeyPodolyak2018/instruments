@@ -129,6 +129,14 @@ var regular={       var1:{re:/<g id="konv_x0020_konv([0-9]{1,})">/g, change:'<g 
                     var106:{re:/id="zadvijkaGroup([0-9]{1,})select.*" class="/g, change:'class="zadvijkaGroup$1select '},
 
                     var107:{re:/<g id="Слой_x0020_1">/g, change:'<g id="Слой_x0020_1"><title class="title_very_dificult">:-)</title>'},
+                    
+                    //Groupe Pzadvijka type 5
+                    var108:{re:/<g id="Pzadvijka_x0020_Pzadvijka([0-9]{1,})">/g, change:'<g class="Pzadvijka Pzadvijka$1">'},
+                    var109:{re:/id="Pzadvijka([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="Pzadvijka$1 '},
+                    var110:{re:/id="Pzadvijka([0-9]{1,})_x0020_left[_]{0,}[0-9]{0,}" class="/g, change:'class="Pzadvijka$1 left '},
+                    var111:{re:/id="Pzadvijka([0-9]{1,})_x0020_right[_]{0,}[0-9]{0,}" class="/g, change:'class="Pzadvijka$1 right '},
+                    var112:{re:/id="Pzadvijka([0-9]{1,})select[_]{0,}[0-9]{0,}" class="/g, change:'class="Pzadvijka$1select '},
+                    var113:{re:/id="Pzadvijka([0-9]{1,})select.*" class="/g, change:'class="Pzadvijka$1select '},
 
                 };
                 

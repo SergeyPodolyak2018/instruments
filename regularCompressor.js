@@ -25,6 +25,7 @@ var regular={
                     var24:{re:/<g id="Слой_x0020_1">/g,                                             change:'<g id="Слой_x0020_1"><title class="title_very_dificult">:-)</title>'},
                     var25:{re:/<g id="CManager_x0020_CManager-F0-M1">/g,                            change:'<g class="CManager CManager-F0-M1">'},
                     var26:{re:/id="text" class="/g,                                                 change:'class="text '},
+                    var27:{re:/id="levelBar[_]{0,}([0-9]{0,})" class="/g,                           change:'class="levelBar '},
                     
    
                 };
