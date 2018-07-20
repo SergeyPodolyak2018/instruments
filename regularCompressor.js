@@ -26,7 +26,10 @@ var regular={
                     var25:{re:/<g id="CManager_x0020_CManager-F0-M1">/g,                            change:'<g class="CManager CManager-F0-M1">'},
                     var26:{re:/id="text" class="/g,                                                 change:'class="text '},
                     var27:{re:/id="levelBar[_]{0,}([0-9]{0,})" class="/g,                           change:'class="levelBar '},
-                    
+                    var28:{re:/id="pressure([0-9]{1,})status[_]{0,}([0-9]{0,})" class="/g,          change:'class="pressure$1status '},
+                    var29:{re:/id="temperature([0-9]{1,})status[_]{0,}([0-9]{0,})" class="/g,       change:'class="temperature$1status '},
+                    var30:{re:/id="level([0-9]{1,})status[_]{0,}([0-9]{0,})" class="/g,             change:'class="level$1status '},
+                    var31:{re:/id="position([0-9]{1,})status[_]{0,}([0-9]{0,})" class="/g,          change:'class="position$1status '},
    
                 };
 exports.regular=regular;
