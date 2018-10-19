@@ -10,7 +10,7 @@ var regular={
                     var9:{re:/id="F([0-9]{1,})-B([0-9]{1,})-H([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g,          change:'class="F$1-B$2-H$3 '},
                     var10:{re:/id="F([0-9]{1,})-B([0-9]{1,})-H([0-9]{1,})-manual[_]{0,}[0-9]{0,}" class="/g,  change:'class="F$1-B$2-H$3-manual '},
                     var11:{re:/<g id="icon_x0020_attention-F([0-9]{1,})-B([0-9]{1,})-H([0-9]{1,})">/g,        change:'<g class="icon attention-F$1-B$2-H$3">'},
-                    var12:{re:/<g id="F([0-9]{1,})-B([0-9]{1,})-D-([a-z]{1,6})">/g,                           change:'<g class="F$1-B$2-D-$3">'},
+                    var12:{re:/<g id="F([0-9]{1,})-B([0-9]{1,})-D-([a-z]{1,6})([_]{0,})([0-9]{0,})">/g,       change:'<g class="F$1-B$2-D-$3">'},
                     var13:{re:/id="F([0-9]{1,})-B([0-9]{1,})-T([0-9]{1,})([-]{0,1})([text]{0,4})" class="/g,  change:'class="F$1-B$2-T$3$4$5 '},
                     var14:{re:/id="F([0-9]{1,})-B([0-9]{1,})-([aA-zZ]{6,11})" class="/g,                      change:'class="F$1-B$2-$3 '},
                     var15:{re:/<g id="gate_x0020_gate-F([0-9]{1,})-B([0-9]{1,})-G([0-9]{1,})">/g,             change:'<g class="gate gate-F$1-B$2-G$3">'},

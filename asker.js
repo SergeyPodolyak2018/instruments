@@ -30,5 +30,5 @@ fs.readFile(''+name+'.svg', 'utf8', function(error, data){
   		console.log(i);	
         data = data.replace(expressions[i].re, expressions[i].change);
     }
-    fs.writeFileSync('projectSVG.svg', data);
+    fs.writeFileSync(name+'_konv.svg', data);
 });

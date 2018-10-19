@@ -138,6 +138,10 @@ var regular={       var1:{re:/<g id="konv_x0020_konv([0-9]{1,})">/g, change:'<g 
                     var112:{re:/id="Pzadvijka([0-9]{1,})select[_]{0,}[0-9]{0,}" class="/g, change:'class="Pzadvijka$1select '},
                     var113:{re:/id="Pzadvijka([0-9]{1,})select.*" class="/g, change:'class="Pzadvijka$1select '},
 
+                    //Dryer new elements
+                    var114:{re:/id="dryer([0-9]{1,})[_]{0,}[0-9]{0,}" class="/g, change:'class="dryer$1 '},
+                    var115:{re:/id="dryer([0-9]{1,})gate.*" class="/g, change:'class="dryer$1gate '},
+
                 };
                 
   
